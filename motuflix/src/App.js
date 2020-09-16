@@ -1,27 +1,26 @@
 import React from 'react';
 import './App.css';
+import Banner from './Banner';
 import Row from "./commonComponents/Row"
+import Navbar from './Navbar';
+import requests from "./requests";
 
 function App() {
   return (
     <>
     <div className="App">
-
-        <h1>its Cloning timing : day #1</h1>
-        <h1>Welcome to <span style={{fontFamily:"cursive"}}>MOTUFLIX</span> </h1>
+      <Navbar />
+        <Banner />
+          <Row title="NETFLIX Originals" isLargeRow fetchUrl={requests.fetchNetflixOriginals}/>
+          <Row title="Trending RightNow" fetchUrl={requests.fetchTrending} />
+          <Row title="Top Rated" fetchUrl={requests.fetchTopRated}/>
+          <Row title="Action stream" fetchUrl={requests.fetchActionMovies}/>
+          <Row title="Comedy stream" fetchUrl={requests.fetchComedyMovies}/>
+          <Row title="Horror stream" fetchUrl={requests.fetchHorrorMovies}/>
+          <Row title="Romance stream" fetchUrl={requests.fetchRomanceMovies}/>
+          <Row title="Kids stream" fetchUrl={requests.fetchKidsMovies}/>
+          {/* <Row title="Adult stream" fetchUrl={requests.fetchAdultMovies}/> */}
         </div>
-        <div>
-          <Row title="NETFLIX Originals" />
-          <Row title="Trending RightNow" />
-          <Row title="Top Rated" />
-          <Row title="Action stream" />
-          <Row title="Comedy stream" />
-          <Row title="Horror stream" />
-          <Row title="Romance stream" />
-          <Row title="Kids stream" />
-          <Row title="Adult stream" />
-        </div>
-    
     </>
   );
 }

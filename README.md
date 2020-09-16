@@ -1,4 +1,4 @@
-* # ```clones```*
+# ``` *clones* ```
 -----------------------------------------------------------------------------------------------------
 ### This is a challenge taken as a part *full stack skill* Development in me.
 
@@ -8,9 +8,19 @@
 
 ```
 
-developing clones of the most popular webapps/websites
+Developing clones of the most popular webapps/websites
 
 ```
+
+## Task list
+
+```
+  [x] NETFLIX
+  [ ] TWITTER
+  [ ] INSTAGRAM
+```
+
+
 
 ## ```Frameworks will be used ```
 
@@ -21,3 +31,5 @@ developing clones of the most popular webapps/websites
 | ```Back-End ```|     |     |
 | :---:     |:---:|:---:|
 |``` Node JS  ``` |```SQL ``` |``` NOSQL ```|
+
+
